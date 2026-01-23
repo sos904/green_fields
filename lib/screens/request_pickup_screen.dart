@@ -270,7 +270,7 @@ class _RequestPickupScreenState extends State<RequestPickupScreen> {
               ),
               const SizedBox(height: 32),
 
-              // Estimated Weight
+              /*   // Estimated Weight
               _buildSectionTitle("Estimated Weight (Optional)"),
               const SizedBox(height: 12),
               Container(
@@ -307,7 +307,7 @@ class _RequestPickupScreenState extends State<RequestPickupScreen> {
                     ),
                   ],
                 ),
-              ),
+              ), */
               const SizedBox(height: 40),
 
               // Submit Button
