@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:green_fields/screens/profile.dart';
 import 'package:green_fields/screens/request_pickup_screen.dart';
 import 'package:green_fields/screens/schedule_screen.dart';
 import 'home_screen.dart';
 import 'pickup_history_screen.dart';
-import 'profile_screen.dart';
 
 class MainLayout extends StatefulWidget {
   const MainLayout({super.key});
@@ -19,7 +19,7 @@ class _MainLayoutState extends State<MainLayout> {
     HomeScreen(),
     RequestPickupScreen(),
     ScheduleScreen(),
-    //PickupHistoryScreen(),
+    ProfileScreen(),
 
     ///  ProfileScreen(),
   ];
@@ -31,18 +31,20 @@ class _MainLayoutState extends State<MainLayout> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         selectedItemColor: Colors.green,
+        unselectedItemColor: Colors.grey,
+        type: BottomNavigationBarType.fixed,
         onTap: (index) {
           setState(() => _currentIndex = index);
         },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
-            icon: Icon(Icons.history),
+            icon: Icon(Icons.calendar_month),
             label: "Request Pickup",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.schedule),
-            label: "Schedule Pickup",
+            label: "Pickup History",
           ),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
         ],

@@ -42,10 +42,10 @@ class _RequestPickupScreenState extends State<RequestPickupScreen> {
           style: TextStyle(fontWeight: FontWeight.w600),
         ),
         backgroundColor: Colors.green,
-        leading: IconButton(
+        /*  leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
-        ),
+        ), */
       ),
       body: SingleChildScrollView(
         child: Padding(

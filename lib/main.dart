@@ -25,6 +25,7 @@ class GreenFieldsApp extends StatelessWidget {
         '/login': (_) => const LoginScreen(),
         '/signup': (_) => const SignupScreen(),
         '/home': (_) => const HomeScreen(),
+
         '/forgot-password': (_) => const ForgotPasswordScreen(),
       },
     );

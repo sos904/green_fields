@@ -114,11 +114,6 @@ class HomeScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.grey,
-                      size: 18,
-                    ),
                   ],
                 ),
               ),
@@ -372,7 +367,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
 
-      // Bottom Navigation Bar
+      /*   // Bottom Navigation Bar
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           boxShadow: [
@@ -408,7 +403,7 @@ class HomeScreen extends StatelessWidget {
             BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
           ],
         ),
-      ),
+      ), */
     );
   }
 
