@@ -226,7 +226,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 physics: const NeverScrollableScrollPhysics(),
                 crossAxisCount: 2,
                 childAspectRatio: 1.0,
-                crossAxisSpacing: 16,
+                crossAxisSpacing: 18,
                 mainAxisSpacing: 20,
                 children: [
                   _buildStatCard(
@@ -525,11 +525,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               child: Icon(icon, color: color, size: 24),
             ),
-            const SizedBox(height: 12),
+
             Text(
               value,
               style: TextStyle(
-                fontSize: 24,
+                fontSize: 15,
                 fontWeight: FontWeight.bold,
                 color: color,
               ),
